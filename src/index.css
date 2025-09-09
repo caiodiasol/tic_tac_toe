@@ -26,7 +26,9 @@ body {
     url('bg-pattern-dark.png');
   background-repeat: repeat;
   background-size: 100% 100%, 30% 30%, 100% 100%;
-  min-height: 110rem;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -347,5 +349,194 @@ ol {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  header img {
+    width: 6rem;
+    margin: 2rem auto 0.5rem auto;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin: 0 auto 2rem auto;
+  }
+
+  #game-container {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  #players {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  #players li {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .player-name {
+    width: 8rem;
+    font-size: 0.9rem;
+  }
+
+  .player input {
+    width: 8rem;
+    font-size: 0.9rem;
+  }
+
+  #game-board button {
+    width: 6rem;
+    height: 6rem;
+    font-size: 4rem;
+  }
+
+  #game-over h2 {
+    font-size: 3rem;
+  }
+
+  #game-over p {
+    font-size: 1.5rem;
+  }
+
+  #log {
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+}
+
+/* Mobile phones (480px and below) */
+@media (max-width: 480px) {
+  header img {
+    width: 4rem;
+    margin: 1.5rem auto 0.5rem auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  #game-container {
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  #players {
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .player-name {
+    width: 6rem;
+    font-size: 0.8rem;
+    padding: 0.3rem;
+  }
+
+  .player input {
+    width: 6rem;
+    font-size: 0.8rem;
+    padding: 0.3rem;
+  }
+
+  .player-symbol {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  #players button {
+    width: 2.5rem;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.2rem;
+  }
+
+  #game-board {
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  #game-board ol {
+    gap: 1rem;
+  }
+
+  #game-board button {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 3rem;
+    padding: 0.5rem;
+  }
+
+  #game-over h2 {
+    font-size: 2.5rem;
+  }
+
+  #game-over p {
+    font-size: 1.2rem;
+  }
+
+  #game-over button {
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  #log {
+    max-width: 95%;
+    margin: 0.5rem auto;
+  }
+
+  #log li {
+    margin: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  #pre-game button {
+    font-size: 3rem;
+  }
+}
+
+/* Small mobile phones (360px and below) */
+@media (max-width: 360px) {
+  header img {
+    width: 3.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #game-container {
+    padding: 0.8rem;
+  }
+
+  .player-name {
+    width: 5rem;
+    font-size: 0.7rem;
+  }
+
+  .player input {
+    width: 5rem;
+    font-size: 0.7rem;
+  }
+
+  #game-board button {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.5rem;
+  }
+
+  #game-over h2 {
+    font-size: 2rem;
+  }
+
+  #game-over p {
+    font-size: 1rem;
   }
 }
